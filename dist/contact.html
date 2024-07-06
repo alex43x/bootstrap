@@ -62,25 +62,36 @@
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
+                                <div class="container-fluid justify-content-start">
+                                    <label class="col-3" for="name">Name</label>
+                                    <input class="form-control col-7" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
-                                <div class="form-floating">
+                                <br>
+                                <div class="container-fluid justify-content-start">
+                                    <label class="col-3" for="email">Email</label>
                                     <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <br>
+                                <div class="container-fluid row">
+                                    <label class="col-3" for="phone">Sex</label>
+                                    <div class="col-7">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label for="">Man</label>
+                                    
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-7">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label for="">Woman</label>
+                                    </div>
                                 </div>
-                                <div class="form-floating">
+                                <br>
+                                <div class="container-fluid align-items-start ">
+                                    <label class="col-3 align-self-start" for="message">Text</label>
                                     <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
                                 <br />
